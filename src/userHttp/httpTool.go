@@ -15,7 +15,7 @@ func WebService()  {
 	go http.HandleFunc("/test",loginTask)
 	go http.HandleFunc("/ss",loginTask1)
 
-	err := http.ListenAndServe("192.168.2.16:8080",nil)
+	err := http.ListenAndServe("0.0.0.0:8080",nil)
 
 	if err != nil {
 		//失败
